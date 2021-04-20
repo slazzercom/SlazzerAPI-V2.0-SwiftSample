@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="POC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="neo-d9-9Xx">
+                                <rect key="frame" x="0.0" y="478" width="414" height="384"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hk8-56-bx2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="384"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XN-4l-qAC">
+                                <rect key="frame" x="0.0" y="428" width="207" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YKb-W6-1y9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JmI-bk-i2f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDl-gl-IX5">
+                                <rect key="frame" x="207" y="428" width="207" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I0d-A4-syY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Remove Background">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeBgClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yky-rc-VZe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="LDl-gl-IX5" firstAttribute="leading" secondItem="0XN-4l-qAC" secondAttribute="trailing" id="Bcm-Of-ee6"/>
+                            <constraint firstItem="neo-d9-9Xx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hzg-Gr-j1e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hk8-56-bx2" secondAttribute="trailing" id="Sg5-aB-Hfq"/>
+                            <constraint firstItem="0XN-4l-qAC" firstAttribute="width" secondItem="LDl-gl-IX5" secondAttribute="width" id="UPh-Qu-1RJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="neo-d9-9Xx" secondAttribute="bottom" id="USd-I7-B8C"/>
+                            <constraint firstItem="neo-d9-9Xx" firstAttribute="top" secondItem="0XN-4l-qAC" secondAttribute="bottom" id="V5d-Qx-q7L"/>
+                            <constraint firstItem="0XN-4l-qAC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y1K-3j-eE4"/>
+                            <constraint firstItem="Hk8-56-bx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z85-Xa-5DI"/>
+                            <constraint firstItem="neo-d9-9Xx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dsp-O8-JPm"/>
+                            <constraint firstItem="LDl-gl-IX5" firstAttribute="top" secondItem="Hk8-56-bx2" secondAttribute="bottom" id="fZ3-ZY-lpb"/>
+                            <constraint firstItem="0XN-4l-qAC" firstAttribute="top" secondItem="Hk8-56-bx2" secondAttribute="bottom" id="iS6-Wf-yPQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LDl-gl-IX5" secondAttribute="trailing" id="jVv-Qp-ZrM"/>
+                            <constraint firstItem="neo-d9-9Xx" firstAttribute="top" secondItem="LDl-gl-IX5" secondAttribute="bottom" id="xfE-Gp-75q"/>
+                            <constraint firstItem="Hk8-56-bx2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yMp-JZ-Mna"/>
+                            <constraint firstItem="Hk8-56-bx2" firstAttribute="height" secondItem="neo-d9-9Xx" secondAttribute="height" id="yYr-E3-zbu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputImage" destination="Hk8-56-bx2" id="gMO-14-E2r"/>
+                        <outlet property="outputImage" destination="neo-d9-9Xx" id="zvX-XP-dBK"/>
+                        <outlet property="removeBgBtn" destination="LDl-gl-IX5" id="z7M-ve-Kfq"/>
+                        <outlet property="selectImageBtn" destination="0XN-4l-qAC" id="hB0-Cy-7OY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
